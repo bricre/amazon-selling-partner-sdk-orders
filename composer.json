@@ -13,8 +13,8 @@
     "allansun/openapi-runtime": "^3"
   },
   "require-dev": {
-    "allansun/openapi-code-generator": "^0.2.5",
-    "allansun/openapi-parser": "^2.1.4"
+    "allansun/openapi-code-generator": "^1",
+    "allansun/openapi-parser": "^2"
   },
   "autoload": {
     "psr-4": {
