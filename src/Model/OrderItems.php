@@ -10,5 +10,5 @@ use OpenAPI\Runtime\AbstractModel;
  */
 class OrderItems extends AbstractModel
 {
-    protected $isRawObject = true;
+    protected bool $isRawObject = true;
 }

@@ -9,5 +9,5 @@ use OpenAPI\Runtime\AbstractModel;
  */
 class MarketplaceId extends AbstractModel
 {
-    protected $isRawObject = true;
+    protected bool $isRawObject = true;
 }

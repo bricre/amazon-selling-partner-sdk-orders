@@ -10,10 +10,12 @@ class ResponseHandlerStack extends BaseClass
 {
     public function __construct()
     {
-        $handlers[] = new GenericResponseHandler();
-        $jsonResponsHandler = new JsonResponseHandler();
-        $jsonResponsHandler->setResponseTypes(new ResponseTypes());
-        $handlers[] = $jsonResponsHandler;
+        $genericResponseHandler = new GenericResponseHandler();
+        $genericResponseHandler->setResponseTypes(new ResponseTypes());
+        $handlers[] = $genericResponseHandler;
+        $jsonResponseHandler = new JsonResponseHandler();
+        $jsonResponseHandler->setResponseTypes(new ResponseTypes());
+        $handlers[] = $jsonResponseHandler;
         parent::__construct($handlers);
     }
 }
